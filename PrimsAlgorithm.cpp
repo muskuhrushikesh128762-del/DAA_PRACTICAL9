@@ -13,7 +13,6 @@ void primMST(vector<vector<int>>& graph, int V) {
     for (int count = 0; count < V - 1; count++) {
         int u = -1;
 
-        // Find the vertex with minimum key value
         for (int v = 0; v < V; v++) {
             if (!inMST[v] && (u == -1 || key[v] < key[u]))
                 u = v;
